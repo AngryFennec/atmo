@@ -1,5 +1,7 @@
 /* Плагины */
 @import "plugins/normalize";
+@import "plugins/fancybox";
+@import "plugins/swiper";
 
 /* Общие */
 @import "functions";
@@ -20,4 +22,5 @@
 @import "blocks/testimonial";
 @import "blocks/about-job";
 @import "blocks/about-docs";
+@import "blocks/about-cert";
 
