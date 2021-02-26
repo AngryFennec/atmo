@@ -22,4 +22,10 @@
   &--blue {
     background-color: $dark-blue;
   }
+
+  &--transparent {
+    background-color: transparent;
+    color: #898989;
+    border: 1px solid #898989;
+  }
 }
