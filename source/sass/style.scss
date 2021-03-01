@@ -11,6 +11,7 @@
 @import "global";
 
 /* Блоки */
+
 @import "blocks/container";
 @import "blocks/button";
 @import "blocks/title";
@@ -23,4 +24,10 @@
 @import "blocks/about-job";
 @import "blocks/about-docs";
 @import "blocks/about-cert";
+@import "blocks/breadcrumbs";
+@import "blocks/team-member";
+@import "blocks/team";
+@import "blocks/title";
+@import "blocks/footer";
+@import "blocks/contacts";
 
