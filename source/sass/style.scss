@@ -1,5 +1,7 @@
 /* Плагины */
 @import "plugins/normalize";
+@import "plugins/fancybox";
+@import "plugins/swiper";
 
 /* Общие */
 @import "functions";
@@ -10,12 +12,22 @@
 
 /* Блоки */
 
-@import "blocks/breadcrumbs";
 @import "blocks/container";
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/about-promo";
+@import "blocks/about";
+@import "blocks/about-advantages";
+@import "blocks/about-gallery";
+@import "blocks/about-testimonials";
+@import "blocks/testimonial";
+@import "blocks/about-job";
+@import "blocks/about-docs";
+@import "blocks/about-cert";
+@import "blocks/breadcrumbs";
 @import "blocks/team-member";
 @import "blocks/team";
 @import "blocks/title";
 @import "blocks/footer";
 @import "blocks/contacts";
-@import "blocks/button";
 
