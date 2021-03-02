@@ -1,0 +1,168 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+}
+
+.header__overlay {
+  display: none;
+}
+
+.header__mob-navigation-menu {
+  display: none;
+
+  button {
+    min-width: 220px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0.02em;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: $dark-blue;
+    color: #ffffff;
+  }
+}
+
+.header.open {
+  & .header__mob-navigation-menu {
+      display: flex;
+      background-color: $white;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 280px;
+      height: 100%;
+      min-height: 100vh;
+      padding: 30px 25px;
+      overflow-y: auto;  
+  }
+
+  & .header__overlay {
+      display: block;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(15, 15, 15, 0.7);
+  }
+}
+
+.mob-menu__navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+}
+
+.hover-list {
+  position: relative;
+
+  li + li {
+    margin-left: 0;
+  }
+
+  &:hover .sub-hover-list{
+    display: block;
+  }
+}
+
+.sub-hover-list {
+  display: none;
+  padding: 48px 0 18px 0;
+  width: 300px; 
+  position: absolute;
+  top: 0px;
+  left: -10px;
+
+  & .sub-sub-hover-menu {
+    background: #6A9AA0; 
+    padding: 40px 0 17px 50px;
+
+    & a {
+      font-family: Inter;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;      
+    }
+
+    &:hover {
+      background: $dark-blue; 
+    }
+
+    &:hover .sub-sub-hover-list{
+      display: flex;
+    }
+  }
+
+  .sub-sub-hover-menu + .sub-sub-hover-menu {
+    padding: 17px 0 17px 50px;
+  }
+
+  .sub-sub-hover-link a {
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    opacity: 0.5;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      background: #ffffff;
+      width: 100%;
+      height: 1px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .sub-sub-hover-link + .sub-sub-hover-link {
+    margin-top: 10px;
+  }
+}
+
+.sub-sub-hover-list {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 100%;
+  background: $dark-blue;
+  width: 783px;
+  padding: 38px 0 0 60px;
+  height: 634px;
+
+  & .column + .column {
+    margin-left: 100px;
+  }
+}
+
+
