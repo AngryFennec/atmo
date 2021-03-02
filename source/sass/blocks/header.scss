@@ -93,6 +93,10 @@
   top: 0px;
   left: -10px;
 
+  @media (max-width: 1150px) {
+    padding: 43px 0 18px 0;
+  }
+
   & .sub-sub-hover-menu {
     background: #6A9AA0; 
     padding: 40px 0 17px 50px;
@@ -158,7 +162,11 @@
   background: $dark-blue;
   width: 783px;
   padding: 38px 0 0 60px;
-  height: 634px;
+  height: 639px;
+
+  @media (max-width: 1150px) {
+    top: 43px;
+  }
 
   & .column + .column {
     margin-left: 100px;
