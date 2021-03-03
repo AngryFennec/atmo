@@ -4,6 +4,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media(max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30p
+    }
+
     & h2 {
         margin-bottom: 30px;
     }
@@ -13,6 +18,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 320px;
     gap: 16px;
+
+    @media(max-width: 1023px) {
+        grid-template-columns: 1fr;
+    }
 
     & a {
         border-radius: 12px;
@@ -77,13 +86,27 @@
         grid-column-start: 1;
         grid-column-end: 3;
 
+        @media(max-width: 1023px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
         & p {
             margin-right: 70px;
+
+            @media(max-width: 767px) {
+                margin-right: 0;
+            }
         }
 
         & img {
             top: 20px;
             right: 60px;
+
+            @media(max-width: 1023px) {
+                top: calc(50% - 5px);
+                right: 20px;
+            }
         }
     }
     & a:nth-of-type(2) {
@@ -92,31 +115,60 @@
         grid-column-start: 3;
         grid-column-end: 4;
 
+        @media(max-width: 1023px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
         & img {
             top: 225px;
             right: 60px;
+
+            @media(max-width: 1023px) {
+                top: calc(50% - 5px);
+                right: 20px;
+            }
         }
     }
     & a:nth-of-type(3) {
 
         & p {
             margin-right: 80px;
+
+            @media(max-width: 767px) {
+                margin-right: 0;
+            }
         }
 
         & img {
             top: 63px;
             right: 60px;
+
+            @media(max-width: 1023px) {
+                top: calc(50% - 5px);
+                right: 20px;
+            }
         }
         
     }
     & a:last-of-type {
         & p {
             margin-right: 80px;
+
+            @media(max-width: 767px) {
+                margin-right: 0;
+            }
         }
 
         & img {
             top: 63px;
             right: 60px;
+
+            @media(max-width: 1023px) {
+                top: calc(50% - 5px);
+                right: 20px;
+            }
         }
     }
 }

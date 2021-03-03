@@ -15,5 +15,10 @@
     font-size: 30px;
     line-height: 120%;
   }
+
+  @media(max-width: 1024px) {
+    font-size: 28px;
+    line-height: 120%;
+  }
 }
 
