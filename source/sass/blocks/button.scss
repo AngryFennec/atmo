@@ -1,27 +1,27 @@
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  width: 100%;
-  max-width: 280px;
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  min-height: 59px;
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    min-height: 59px;
 
-  background-color: $pink;
-  color: $white;
+    background-color: $pink;
+    color: $white;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  font-size: 16px;
-  line-height: 19px;
-  font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: inherit;
 
-  &--blue {
-    background-color: $dark-blue;
-  }
+    &--blue {
+        background-color: $dark-blue;
+    }
 
   &--transparent {
     background-color: transparent;
@@ -29,3 +29,4 @@
     border: 1px solid #898989;
   }
 }
+
