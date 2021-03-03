@@ -107,17 +107,17 @@
   }
 }
 
-// .button {
-//   max-width: 445px;
-//   margin-top: 39px;
-//   line-height: 80px;
-//   padding: 0;
+.button {
+  max-width: 445px;
+  margin-top: 39px;
+  line-height: 80px;
+  padding: 0;
 
-//   @media (max-width: 1000px) {
-//     margin-top: 20px;
-//     line-height: 60px;
-//   }
-// }
+  @media (max-width: 1000px) {
+    margin-top: 20px;
+    line-height: 60px;
+  }
+}
 
 .modal__content {
   @include center;
