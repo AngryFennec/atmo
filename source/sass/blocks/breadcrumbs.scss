@@ -1,4 +1,6 @@
 .breadcrumbs {
+  position: relative;
+  z-index: 2;
   &__container {
     @include list-reset;
     margin: 0 auto;

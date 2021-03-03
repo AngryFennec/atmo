@@ -14,6 +14,10 @@
     align-items: flex-start;
     margin-bottom: 40px;
 
+    @media(max-width: 767px) {
+        flex-direction: column;
+    }
+
     & p {
         margin-top: 0;
         line-height: 24px;
@@ -21,6 +25,12 @@
 
         color: #424242;
         max-width: 585px;
+
+        @media(max-width: 767px) {
+            max-width: 100%;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
     }
 
     & a {
@@ -48,6 +58,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
+    @media(max-width: 1023px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .about-testimonials__more {
