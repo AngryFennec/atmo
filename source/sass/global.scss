@@ -45,3 +45,22 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+
+  @media(max-width: 768px) {
+    color: transparent!important;
+    z-index: 0;
+  }
+}
+.stop {
+  position: relative;
+  z-index: 101;
+
+  @media(max-width: 768px) {
+    color: transparent!important;
+    z-index: 0;
+  }
+}

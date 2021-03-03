@@ -1,0 +1,121 @@
+.diag-price {
+  background: #5F8F96;
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+    }
+   }
+
+  &__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+    margin: 0;
+
+
+    @media(max-width: 1024px) {
+      font-size: 24px;
+      line-height: 120%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 58.5%;
+    padding-top: 14px;
+    max-width: 58.5%;
+
+    @media(max-width: 767px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+  }
+
+  & li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(255,255,255,0.4);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  & span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 10px;
+  }
+
+  & p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height, or 115% */
+
+    color: #FFFFFF;
+    white-space: nowrap;
+
+    @media(max-width: 767px) {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  & b {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    color: #FFFFFF;
+    opacity: 0.5;
+    position: relative;
+    margin-right: 8px;
+    margin-top: 2px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url("../img/line-through.svg") no-repeat;
+      z-index: 5;
+      width: 36px;
+      height: 20px;
+      display: block;
+      top: 5px;
+    }
+  }
+
+  &__discount {
+    display: flex;
+
+  }
+
+  &__see-all {
+    margin-top: 30px;
+    max-width: 260px;
+  }
+}
