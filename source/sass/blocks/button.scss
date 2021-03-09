@@ -14,6 +14,7 @@
     color: $white;
 
     text-decoration: none;
+    transition: opacity 0.2s;
 
     font-size: 16px;
     line-height: 19px;
@@ -27,6 +28,10 @@
     background-color: transparent;
     color: #898989;
     border: 1px solid #898989;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 
