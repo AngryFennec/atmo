@@ -1,0 +1,168 @@
+.testi-promo {
+    margin-top: -84px;
+    padding-top: 84px;
+    background: url('../img/promo-testi.png') no-repeat center bottom;
+    background-size: cover;
+    background-color: rgba(250, 250, 250, 0.5);
+    overflow-x: hidden;
+
+    & h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.testi-promo__description {
+    max-width: 564px;
+    line-height: 24px;
+    color: #2D2D2D;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @media(max-width: 1023px) {
+        max-width: 100%;
+    }
+}
+
+.testi-promo__links {
+    display: flex;
+    padding-bottom: 168px;
+
+    @media(max-width: 1023px) {
+        padding-bottom: 100px;
+    }
+}
+
+.testi-promo__link {
+    background-color: white;
+    max-width: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 12px 36px rgba(239, 208, 208, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    min-height: 247px;
+    padding-bottom: 15px;
+
+    & img {
+        height: 128px;
+        width: auto;
+        align-self: center;
+    }
+
+    & h2 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2D2D2D;
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+
+        @media(max-width: 1023px) {
+            padding: 0 10px;
+        }
+    }
+
+    & p {
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        color: #898989;
+        padding: 0 20px 0 18px;
+
+        @media(max-width: 1023px) {
+            padding: 0 10px;
+        }
+    }
+
+    &:first-child {
+        margin-right: 30px;
+
+        @media(max-width: 500px) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.testi-promo__container {
+    display: flex;
+}
+
+.testi-promo__left-column {
+    width: 50%;
+
+    @media(max-width: 1023px) {
+        width: 100%;
+    }
+}
+
+.testi-promo__right-column {
+    position: relative;
+    width: calc(50% + 110px);
+    background: url('../img/hand.png') no-repeat right bottom;
+    margin-right: -110px;
+    margin-top: -50px;
+    padding-left: 40px;
+    min-width: 710px;
+
+    @media(max-width: 1023px) {
+        display: none;
+    }
+}
+
+.testi-promo__slider {
+    padding-left: 203px;
+    padding-top: 36px;
+
+    & .swiper-slide {
+        opacity: 0 !important;
+    }
+
+    & .swiper-slide-active {
+        opacity: 1 !important;
+        transition: 0.8s;
+    }
+}
+.testi-promo__nav {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 154px;
+
+    & p {
+        font-size: 22px;
+        line-height: 27px;
+        color: #2D2D2D;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.testi-promo__list {
+    @include list-reset;
+}
+
+
+.testi-promo__next {
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    display: flex;
+}
+
+.testi-promo__prev {
+    width: 51px;
+    height: 51px;
+    display: flex;
+    cursor: pointer;
+}
