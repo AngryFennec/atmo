@@ -4,3 +4,4 @@
 //= modules/header-menu.js
 //= modules/about-cert.js
 //= modules/phone-masks.js
+//= modules/testimonials.js
