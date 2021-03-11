@@ -44,6 +44,11 @@
     text-decoration: none;
     min-height: 247px;
     padding-bottom: 15px;
+    transition: opacity 0.4s;
+
+    &:hover {
+        opacity: 0.8;
+    }
 
     & img {
         height: 128px;
