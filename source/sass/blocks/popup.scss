@@ -1,0 +1,143 @@
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(15, 15, 15, 0.7);
+    z-index: 10;
+
+    & h2 {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 61px;
+        color: #3D3B3B;
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        @media(max-width: 767px) {
+            font-size: 26px;
+            line-height: 38px;
+        }
+    }
+
+    & p {
+        line-height: 24px;
+        color: #2D2D2D;
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        @media(max-width: 767px) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+
+.popup__container {
+    @include center;
+    background-color: white;
+    width: 100%;
+    max-width: 696px;
+    padding: 40px 60px;
+
+    @media(max-width: 767px) {
+        padding: 30px 20px;
+        max-width: 400px;
+    }
+}
+
+
+.popup__form {
+
+    & input {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        min-height: 59px;
+        padding-left: 56px;
+        padding-right: 15px;
+        background: #F1F1F1;
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+
+        &::placeholder {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #B5B5B5;
+        }
+    }
+
+    & input[name="name"] {
+        background: url(../img/form-name.svg) no-repeat 20px center;
+        background-color: #F1F1F1;
+    }
+
+    & input[name="phone"] {
+        background: url(../img/form-phone.svg) no-repeat 20px center;
+        background-color: #F1F1F1;
+    }
+
+    & textarea {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        min-height: 159px;
+        padding-left: 56px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-right: 15px;
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+        resize: none;
+        background: url(../img/form-message.svg) no-repeat 20px 17px;
+        background-color: #F1F1F1;
+
+        &::placeholder {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #B5B5B5;
+        }
+
+        @media(max-width: 767px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            min-height: 80px;
+        }
+    }
+
+    & div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        @media(max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+
+        & p {
+            font-size: 12px;
+            line-height: 18px;
+            color: #B8B8B8;
+            padding-right: 10px;
+            margin-bottom: 0;
+            padding-right: 0;
+            max-width: 100%;
+            margin-top: 4px;
+        }
+
+        & button {
+            align-self: start;
+            max-width: 100%;
+            margin-top: 4px;
+        }
+    }
+}
+
+ 

@@ -66,6 +66,11 @@
             display: none;
         }
     }
+
+    &:hover .video-testi__play {
+
+        opacity: 0.9;
+    }
 }
 
 .video-testi__text-block {
@@ -162,6 +167,7 @@
     transform: translate(-50%, -50%);
     max-width: 20%;
     height: auto;
+    transition: opacity 0.4s;
 
     @media(max-width: 767px) {
         @include center;
