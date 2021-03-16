@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 6;
+  z-index: 150;
 }
 
 .header__overlay {
@@ -43,7 +43,7 @@
       height: 100%;
       min-height: 100vh;
       padding: 30px 25px;
-      overflow-y: auto;  
+      overflow-y: auto;
   }
 
   & .header__overlay {
@@ -88,7 +88,7 @@
 .sub-hover-list {
   display: none;
   padding: 48px 0 18px 0;
-  width: 300px; 
+  width: 300px;
   position: absolute;
   top: 0px;
   left: -10px;
@@ -98,7 +98,7 @@
   }
 
   & .sub-sub-hover-menu {
-    background: #6A9AA0; 
+    background: #6A9AA0;
     padding: 40px 0 17px 50px;
 
     & a {
@@ -108,11 +108,11 @@
       font-weight: 500;
       line-height: 27px;
       letter-spacing: 0em;
-      text-align: left;      
+      text-align: left;
     }
 
     &:hover {
-      background: $dark-blue; 
+      background: $dark-blue;
     }
 
     &:hover .sub-sub-hover-list{

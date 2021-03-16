@@ -5,11 +5,16 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     @media(max-width: 767px) {
       flex-direction: column;
     }
    }
+
+  &__title-container {
+    position: relative;
+  }
 
   &__title {
     font-family: Inter;
@@ -17,6 +22,8 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
+    min-width: 350px;
+    max-width: 350px;
 
     color: #FFFFFF;
     margin: 0;
@@ -41,6 +48,28 @@
     }
   }
 
+  & h3 {
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding-left: 16px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #ffffff;
+      border-radius: 50%;
+      left: 0;
+      top: 8px;
+    }
+  }
+
   & ul {
     margin: 0;
     padding: 0;
@@ -53,18 +82,26 @@
   & li {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px dashed rgba(255,255,255,0.4);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
     padding-bottom: 6px;
     margin-bottom: 12px;
-  }
 
-  & span {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin-right: 10px;
+    & a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-right: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        opacity: 1;
+      }
+    }
   }
 
   & p {
@@ -117,5 +154,52 @@
   &__see-all {
     margin-top: 30px;
     max-width: 260px;
+  }
+}
+
+.price-list__item--white {
+  .diag-price {
+    background: #ffffff;
+
+    &__title {
+      color: #3D3B3B;
+    }
+
+    & li {
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+
+      & a {
+        color: #3D3B3B;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          border-bottom: 1px solid #EA97AD;
+          color: #EA97AD;
+          opacity: 1;
+        }
+      }
+    }
+
+    & p {
+      color: #3D3B3B;
+    }
+
+    & b {
+      color: #898989;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background: url("../img/line-through-white.svg") no-repeat;
+      }
+    }
+
+    & h3 {
+      color: #3D3B3B;
+
+      &::before {
+        background: #3D3B3B;
+      }
+    }
   }
 }

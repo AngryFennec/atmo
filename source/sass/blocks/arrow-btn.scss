@@ -22,7 +22,30 @@
     }
   }
 
+  &:hover {
+    opacity: 1;
+  }
+
   &:hover span {
+
     border-bottom: 1px solid #ffffff;
   }
+}
+
+.price-list__item--white {
+  .arrow-btn {
+
+    & span {
+      color: #3D3B3B;
+      border-bottom: 1px solid transparent;
+    }
+
+    &:hover {}
+
+    &:hover span {
+      color: #EA97AD;
+      border-bottom: 1px solid #EA97AD;
+    }
+  }
+
 }
