@@ -7,4 +7,5 @@
 //= modules/title-scroll.js
 //= modules/main-about.js
 //= modules/main-slider.js
+//= modules/profile.js
 
