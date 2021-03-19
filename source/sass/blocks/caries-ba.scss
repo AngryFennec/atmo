@@ -1,0 +1,189 @@
+.caries-ba {
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: calc(50% - 15px);
+
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.14);
+
+    @media(max-width: 1023px) {
+      width: calc(50% - 5px);
+    }
+
+    &::before {
+      content: 'До процедур';
+      background: rgba(234, 151, 173, 0.6);
+      box-sizing: border-box;
+      height: 60px;
+      border-radius: 6px;
+      padding: 18px 30px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      position: absolute;
+      display: flex;
+      bottom: 25px;
+      left: 25px;
+
+      @media(max-width: 1023px) {
+        box-sizing: border-box;
+        height: 36px;
+        border-radius: 6px;
+        padding: 10px 16px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        position: absolute;
+        display: block;
+        bottom: 10px;
+        left: 10px;
+      }
+
+      @media(max-width: 660px) {
+        content: 'До';
+        padding: 4px 10px;
+        height: 24px;
+      }
+    }
+
+    &:nth-child(2n)::before {
+      content: 'После процедур';
+      background: rgba(95, 143, 150, 0.6);
+      white-space: nowrap;
+
+      @media(max-width: 660px) {
+        content: 'После';
+      }
+    }
+
+    & img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+
+    }
+  }
+
+  & .swiper-pagination-bullet {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #D9DBE9;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+
+   & .swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+     align-items: center;
+     flex-wrap: wrap;
+
+  }
+
+  & .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D9DBE9;
+    position: relative;
+    background: transparent;
+    margin: 0 12px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: $dark-blue;
+      border-radius: 50%;
+      top: calc(50% - 2px);
+      left: calc(50% - 2px);
+    }
+  }
+
+  &__pagination {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative!important;
+    order: 2;
+    align-self: center;
+    max-width: 75%;
+  }
+
+
+  &__nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__prev {
+    order: 1;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    background: url("../img/swiper-btn-green.svg")  no-repeat;
+    background-size: contain;
+    margin-right: 13px;
+    transform: rotate(180deg);
+
+    @media(max-width: 767px) {
+      width: 36px;
+      height: 36px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &.swiper-button-disabled {
+      background: url("../img/swiper-btn-disabled.svg") no-repeat;
+      transform: rotate(0deg);
+      background-size: contain;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+
+
+  &__next {
+    order: 3;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    background: url("../img/swiper-btn-green.svg")  no-repeat;
+    background-size: contain;
+    margin-left: 13px;
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &.swiper-button-disabled {
+      background: url("../img/swiper-btn-disabled.svg")  no-repeat;
+      background-size: contain;
+      transform: rotate(180deg);
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    @media(max-width: 767px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

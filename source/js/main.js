@@ -8,4 +8,5 @@
 //= modules/main-about.js
 //= modules/main-slider.js
 //= modules/profile.js
+//= modules/caries.js
 

@@ -1,0 +1,133 @@
+.caries-header {
+  padding-top: 60px;
+  background: #FCFCFC;
+
+  @media(max-width: 1024px) {
+    padding-bottom: 60px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__text-content {
+    width: 60%;
+    margin-right: 20px;
+
+    @media(max-width: 1024px) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+
+    @media(max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    align-self: center;
+    margin-left: 38px;
+    display: inline;
+    text-decoration: none;
+    border-bottom: 1px solid #DEDEDE;
+
+    @media(max-width: 550px) {
+      align-self: flex-start;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+
+  &__img-container {
+    max-width: 486px;
+    max-height: 416px;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+
+    & img {
+      max-width: 486px;
+      max-height: 416px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 300px;
+
+    @media(max-width: 550px) {
+      max-width: 200px;
+    }
+  }
+
+  &__options {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    max-width: 300px;
+
+    @media(max-width: 900px) {
+      flex-direction: column;
+    }
+
+    @media(max-width: 660px) {
+      flex-direction: row;
+    }
+
+    & div {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        width: 60%;
+
+        @media(max-width: 900px) {
+          width: 100%;
+        }
+
+        @media(max-width: 660px) {
+          width: 60%;
+        }
+      }
+
+      @media(max-width: 900px) {
+        width: 100%;
+      }
+
+      @media(max-width: 660px) {
+        width: 40%;
+      }
+    }
+
+    & b {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      /* identical to box height, or 137% */
+
+      /* body text */
+      color: #2D2D2D;
+      margin-top: 5px;
+    }
+
+    & span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      /* identical to box height, or 157% */
+
+      /* secondary */
+      color: #EA97AD;
+    }
+  }
+}

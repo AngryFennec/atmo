@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<include src="source/components/head.html"></include>
+
+<body class="page-body">
+<include src="source/components/header.html"></include>
+<main>
+  <section class="caries-header">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__container container">
+        <li>
+          <a class="breadcrumbs__item" href="index.html">Главная</a>
+        </li>
+        <li>
+          <a class="breadcrumbs__item" href="#">Услуги</a>
+        </li>
+        <li>
+          <a class="breadcrumbs__item">Диагностика</a>
+        </li>
+        <li>
+          <a class="breadcrumbs__item breadcrumbs__item--active" href="#">Лечение кариеса</a>
+        </li>
+      </ul>
+    </div>
+    <div class="caries-header__content container">
+      <div class="caries-header__text-content">
+      <h1 class="title">Лечение кариеса</h1>
+      <p>Основа правильного лечения — грамотная всесторонняя диагностика, поэтому наша клиника уделяет особое внимание
+        проведению качественной диагностики болезней ротовой полости. Мы принимаем новейшее высокоточное
+        оборудование</p>
+      <div class="caries-header__bottom-container">
+        <div class="caries-header__options">
+          <div>
+            <span>Время:</span>
+            <b>1 час</b>
+          </div>
+          <div>
+            <span>Стоимость:</span>
+            <b>От 2000 руб.</b>
+          </div>
+        </div>
+        <div class="caries-header__buttons-wrapper">
+          <a href="#" class="caries-header__btn button">Запись на прием</a>
+          <a href="#" class="caries-header__link">Памятка по уходу</a>
+        </div>
+      </div>
+    </div>
+      <div class="caries-header__img-container">
+        <img src="img/caries-header.png" width="486" height="418" alt="фото услуги">
+      </div>
+    </div>
+  </section>
+
+  <section class="caries-ba">
+    <div class="caries-ba__container container">
+      <div class="caries-ba__swiper swiper-container">
+        <div class="swiper-wrapper">
+          <div class="caries-ba__slide swiper-slide">
+            <img src="img/caries-ba-before.png" width="665" height="380" alt="до">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/caries-ba-after.png" width="665" height="380" alt="после">
+          </div>
+          <div class="caries-ba__slide swiper-slide">
+            <img src="img/caries-ba-before.png" width="665" height="380" alt="до">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/caries-ba-after.png" width="665" height="380" alt="после">
+          </div>
+        </div>
+        <div class="caries-ba__nav">
+        <!-- Add Pagination -->
+        <div class="caries-ba__pagination swiper-pagination"></div>
+        <!-- Add Arrows -->
+          <div class="caries-ba__prev swiper-button-prev"></div>
+        <div class="caries-ba__next swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="diag-price">
+    <div class="container diag-price__container">
+      <div class="diag-price__title-container  js-scrolled-container">
+        <h2 class="diag-price__title js-scrolled-title">Удаление зубов</h2>
+      </div>
+      <div class="diag-price__content">
+        <ul>
+          <li>
+            <a>Профилактический осмотр</a>
+            <p>1300 руб.</p>
+          </li>
+          <li>
+            <a>Панорамный снимок зубов</a>
+            <p>280 руб.</p>
+          </li>
+          <li>
+            <a>Рентген зубов</a>
+            <div class="diag-price__discount">
+              <b>1970</b>
+              <p>1400 руб.</p>
+            </div>
+          </li>
+          <li>
+            <a>Компьютерная томография</a>
+            <p>860 руб.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="diag-team">
+    <div class="diag-team__container container">
+      <h2>Другие специалисты</h2>
+      <ul class="diag-team__list">
+        <li class="diag-team__item team-member">
+          <img src="img/team-member.png" width="144" height="144" alt="Фото врача">
+          <p>Давыдова Екатерина Андреевна</p>
+          <span>Врач терапевт</span>
+          <span>Стаж: 12 лет</span>
+          <a href="#">Подробнее</a>
+        </li>
+        <li class="diag-team__item team-member">
+          <img src="img/team-member.png" width="144" height="144" alt="Фото врача">
+          <p>Давыдова Екатерина Андреевна</p>
+          <span>Врач терапевт</span>
+          <span>Стаж: 12 лет</span>
+          <a href="#">Подробнее</a>
+        </li>
+        <li class="diag-team__item team-member">
+          <img src="img/team-member.png" width="144" height="144" alt="Фото врача">
+          <p>Давыдова Екатерина Андреевна</p>
+          <span>Врач терапевт</span>
+          <span>Стаж: 12 лет</span>
+          <a href="#">Подробнее</a>
+        </li>
+        <li class="diag-team__item team-member team-member--all">
+          <p>Познакомиться со&nbsp;всеми</p>
+          <img src="img/team-member-all.png" width="262" height="261" alt="Все врачи">
+          <a href="#">Познакомиться со всеми</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+<include src="source/components/footer.html"></include>
+<include src="source/components/scripts.html"></include>
+</body>
+
+</html>

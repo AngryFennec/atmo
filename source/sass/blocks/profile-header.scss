@@ -29,10 +29,21 @@
     justify-content: space-between;
   }
 
+  &__text-content {
+    width: 57%;
+    margin-right: 20px;
+
+    @media(max-width: 768px) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
   &__photo {
     max-width: 384px;
     width: 100%;
     min-width: 100px;
+    margin-right: 50px;
 
     @media(max-width: 768px) {
       display: none;
@@ -44,9 +55,6 @@
       height: auto;
       max-height: 384px;
       border-radius: 50%;
-
-
-
     }
   }
 
@@ -91,9 +99,11 @@
       flex-direction: column;
       position: relative;
       width: 100%;
+        padding-top: 40px;
 
         @media(max-width: 768px) {
           padding-left: 40px;
+          padding-top: 0;
         }
 
       &:first-child {
@@ -119,7 +129,8 @@
         content: '';
         width: 100px;
         height: 100px;
-        left: -20px;
+        left: 0;
+        top: 10px;
         background: url("../img/profile-icon-1.svg") no-repeat;
         position: absolute;
 
@@ -127,6 +138,7 @@
           width: 40px;
           height: 40px;
           left: -10px;
+          top: 0;
           background-size: contain
         }
       }
@@ -134,7 +146,8 @@
       &:last-child::before {
         content: '';
         width: 100px;
-        left: -20px;
+        left: 0;
+        top: 10px;
         height: 100px;
         background: url("../img/profile-icon-2.svg") no-repeat;
         position: absolute;
@@ -143,6 +156,7 @@
           width: 40px;
           height: 40px;
           left: -10px;
+          top: 0;
 
           background-size: contain
         }
@@ -163,6 +177,7 @@
       font-size: 20px;
       line-height: 24px;
       color: #2D2D2D;
+      margin-top: 0;
 
       @media(max-width: 768px) {
         margin-top: 5px;
