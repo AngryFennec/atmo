@@ -26,9 +26,15 @@
 
 .header-top__logo-image {
   margin: 0 10px 0 0;
+  width: 37px;
+  height: 39px;
+  background: url("../img/header-logo-image.svg") no-repeat;
 }
 
 .header-top__logo-text {
+  width: 175px;
+  height: 37px;
+  background: url("../img/header-logo-text.svg") no-repeat;
   @media (max-width: 400px) {
     display: none;
   }
@@ -47,6 +53,10 @@
 
   & a {
     text-decoration: none;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @media (max-width: 1150px) {
@@ -168,9 +178,16 @@
       display: none;
   }
 
-  & a svg {
+  & a {
+    background: url("../img/menu-phone.svg");
       width: 23px;
       height: 23px;
       margin-right: 50px;
   }
+}
+
+.header-top__burger {
+  width: 30px;
+  height: 23px;
+  background: url("../img/top-burger.svg") no-repeat;
 }
