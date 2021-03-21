@@ -148,6 +148,9 @@
 
   &__logo {
     margin-bottom: 12px;
+    background: url("../img/footer-logo.svg") no-repeat;
+    width: 300px;
+    height: 54px;
   }
 
   &__more {
@@ -260,14 +263,27 @@
     display: flex;
     margin-top: 12px;
 
-    & a {
-      padding: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 6px;
-      display: block;
+    & li {
+
+      & a {
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        display: block;
+        width: 55px;
+        height: 59px;
+
+        background: url("../img/footer-social-vk.svg") no-repeat center;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
 
       &:first-child {
-        margin-right: 10px;
+        a {
+            background: url("../img/footer-social-insta.svg") no-repeat center;
+        }
       }
     }
   }
