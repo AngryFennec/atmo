@@ -106,12 +106,24 @@
 
 .testi-promo__right-column {
     position: relative;
-    width: calc(50% + 110px);
+    width: calc(50% + 33px);
     background: url('../img/hand.png') no-repeat right bottom;
-    margin-right: -110px;
-    margin-top: -50px;
-    padding-left: 40px;
-    min-width: 710px;
+    margin-right: -80px;
+    margin-top: -61px;
+    padding-left: 20px;
+    min-width: 500px;
+    align-self: flex-end;
+    min-height: 669px;
+
+
+    @media(max-width: 1255px) {
+        // width: calc(50% + 70px);
+        min-width: 633px;
+    }
+
+    @media(max-width: 1024px) {
+        margin-top: -65px;
+    }
 
     @media(max-width: 1023px) {
         display: none;
@@ -123,7 +135,13 @@
     padding-top: 36px;
 
     & .swiper-slide {
-        opacity: 0 !important;
+        // opacity: 0 !important;
+
+        & img {
+            border-radius: 26px;
+            overflow: hidden;
+        }
+
     }
 
     & .swiper-slide-active {
