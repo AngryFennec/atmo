@@ -75,3 +75,36 @@ button {
     z-index: 0;
   }
 }
+
+.insta-link {
+  display: block;
+  width: 29px;
+  height: 29px;
+  background: url("../img/insta.svg") no-repeat;
+
+  &:hover {
+    background: url("../img/insta-hover.svg") no-repeat;
+  }
+}
+
+.vk-link {
+  display: block;
+  width: 29px;
+  height: 29px;
+  background: url("../img/vk.svg") no-repeat;
+
+  &:hover {
+    background: url("../img/vk-hover.svg") no-repeat;
+  }
+}
+
+.whatsapp-link {
+  display: block;
+  width: 29px;
+  height: 29px;
+  background: url("../img/whatsapp.svg") no-repeat;
+
+  &:hover {
+    background: url("../img/whatsapp-hover.svg") no-repeat;
+  }
+}

@@ -177,4 +177,20 @@
       background: none;
     }
   }
+
+  &__social-container  li {
+    display: block;
+    width: 29px;
+    height: 29px;
+
+    & a {
+      display: block;
+      width: 29px;
+      height: 29px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }
